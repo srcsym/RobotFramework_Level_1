@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.8.3 on win32)" generated="20211229 20:07:58.163" rpa="false" schemaversion="2">
+<suite id="s1" name="UserMustSignInToCheckout" source="C:\Users\SEYMA\GitHub\RobotFramework\2_UserMustSignInToCheckout\tests\UserMustSignInToCheckout.robot">
+<test id="s1-t1" name="User must sign in to check out">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.amazon.com</arg>
+<arg>gc</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211229 20:07:58.435" level="INFO">Opening browser 'gc' to base url 'https://www.amazon.com'.</msg>
+<status status="PASS" starttime="20211229 20:07:58.434" endtime="20211229 20:08:02.123"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Hello</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20211229 20:08:02.123" endtime="20211229 20:08:02.239"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=twotabsearchtextbox</arg>
+<arg>Ferrari 458</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211229 20:08:02.241" level="INFO">Typing text 'Ferrari 458' into text field 'id=twotabsearchtextbox'.</msg>
+<status status="PASS" starttime="20211229 20:08:02.240" endtime="20211229 20:08:02.541"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//*[@id="nav-search-submit-button"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211229 20:08:02.542" level="INFO">Clicking button 'xpath=//*[@id="nav-search-submit-button"]'.</msg>
+<status status="PASS" starttime="20211229 20:08:02.542" endtime="20211229 20:08:04.950"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>results for "Ferrari 458"</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20211229 20:08:04.951" endtime="20211229 20:08:05.023"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211229 20:08:08.029" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211229 20:08:05.023" endtime="20211229 20:08:08.029"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath=//*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[3]/div/span/div/div/div[2]/div[1]/h2/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20211229 20:08:08.030" level="INFO">Clicking link 'xpath=//*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[3]/div/span/div/div/div[2]/div[1]/h2/a'.</msg>
+<status status="PASS" starttime="20211229 20:08:08.030" endtime="20211229 20:08:11.140"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Back to results</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20211229 20:08:11.140" endtime="20211229 20:08:11.225"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=add-to-cart-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211229 20:08:11.226" level="INFO">Clicking button 'id=add-to-cart-button'.</msg>
+<status status="PASS" starttime="20211229 20:08:11.226" endtime="20211229 20:08:12.600"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Added to Cart</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20211229 20:08:12.600" endtime="20211229 20:08:12.674"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//*[@id="sc-buy-box-ptc-button"]/span/input</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211229 20:08:12.675" level="INFO">Clicking button 'xpath=//*[@id="sc-buy-box-ptc-button"]/span/input'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211229 20:08:13.102" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-24.png"&gt;&lt;img src="selenium-screenshot-24.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211229 20:08:12.747" endtime="20211229 20:08:13.103"/>
+</kw>
+<msg timestamp="20211229 20:08:13.106" level="FAIL">Button with locator 'xpath=//*[@id="sc-buy-box-ptc-button"]/span/input' not found.</msg>
+<status status="FAIL" starttime="20211229 20:08:12.675" endtime="20211229 20:08:13.106"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Sign-In</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20211229 20:08:13.106" endtime="20211229 20:08:13.106"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211229 20:08:13.107" endtime="20211229 20:08:13.107"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20211229 20:08:13.107" endtime="20211229 20:08:13.107"/>
+</kw>
+<doc>This is some basic info about the test</doc>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20211229 20:07:58.433" endtime="20211229 20:08:13.107">Button with locator 'xpath=//*[@id="sc-buy-box-ptc-button"]/span/input' not found.</status>
+</test>
+<doc>This is some basic infor about the whole suit</doc>
+<status status="FAIL" starttime="20211229 20:07:58.165" endtime="20211229 20:08:13.109"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="UserMustSignInToCheckout">UserMustSignInToCheckout</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
