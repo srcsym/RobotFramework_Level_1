@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.3 (Python 3.9.5 on win32)" generated="20211220 14:13:45.365" rpa="false" schemaversion="2">
+<suite id="s1" name="Demo" source="C:\Users\seyma\GitHub\MyStudies\robot_framework\full_amazon_testcases\keyword-demo\demo.robot">
+<test id="s1-t1" name="Test case 1">
+<kw name="Do Something">
+<kw name="Log" library="BuiltIn">
+<arg>I am doing something...</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211220 14:13:45.392" level="INFO">I am doing something...</msg>
+<status status="PASS" starttime="20211220 14:13:45.391" endtime="20211220 14:13:45.392"/>
+</kw>
+<status status="PASS" starttime="20211220 14:13:45.391" endtime="20211220 14:13:45.392"/>
+</kw>
+<kw name="Do Something Else">
+<kw name="Log" library="BuiltIn">
+<arg>I am doing something else...</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211220 14:13:45.393" level="INFO">I am doing something else...</msg>
+<status status="PASS" starttime="20211220 14:13:45.393" endtime="20211220 14:13:45.393"/>
+</kw>
+<status status="PASS" starttime="20211220 14:13:45.393" endtime="20211220 14:13:45.393"/>
+</kw>
+<status status="PASS" starttime="20211220 14:13:45.391" endtime="20211220 14:13:45.393"/>
+</test>
+<test id="s1-t2" name="Test case 2">
+<kw name="Do Another Thing">
+<kw name="Log" library="BuiltIn">
+<arg>I am doing another thing...</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211220 14:13:45.395" level="INFO">I am doing another thing...</msg>
+<status status="PASS" starttime="20211220 14:13:45.395" endtime="20211220 14:13:45.395"/>
+</kw>
+<status status="PASS" starttime="20211220 14:13:45.395" endtime="20211220 14:13:45.395"/>
+</kw>
+<kw name="Do Something Else">
+<kw name="Log" library="BuiltIn">
+<arg>I am doing something else...</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20211220 14:13:45.396" level="INFO">I am doing something else...</msg>
+<status status="PASS" starttime="20211220 14:13:45.396" endtime="20211220 14:13:45.396"/>
+</kw>
+<status status="PASS" starttime="20211220 14:13:45.396" endtime="20211220 14:13:45.396"/>
+</kw>
+<status status="PASS" starttime="20211220 14:13:45.394" endtime="20211220 14:13:45.396"/>
+</test>
+<status status="PASS" starttime="20211220 14:13:45.367" endtime="20211220 14:13:45.398"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Demo">Demo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

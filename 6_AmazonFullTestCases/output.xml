@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.3 (Python 3.9.5 on win32)" generated="20211214 20:49:15.547" rpa="false" schemaversion="2">
+<suite id="s1" name="Full Amazon Testcases" source="C:\Users\seyma\GitHub\MyStudies\robot_framework\full_amazon_testcases">
+<suite id="s1-s1" name="Tests" source="C:\Users\seyma\GitHub\MyStudies\robot_framework\full_amazon_testcases\Tests">
+<suite id="s1-s1-s1" name="Amazon full" source="C:\Users\seyma\GitHub\MyStudies\robot_framework\full_amazon_testcases\Tests\Amazon_full.robot">
+<test id="s1-s1-s1-t1" name="User can search for products">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://www.amazon.com</arg>
+<arg>gc</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211214 20:49:15.756" level="INFO">Opening browser 'gc' to base url 'http://www.amazon.com'.</msg>
+<status status="PASS" starttime="20211214 20:49:15.755" endtime="20211214 20:49:18.329"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Hello, Sign in</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20211214 20:49:18.330" endtime="20211214 20:49:18.363"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=twotabsearchtextbox</arg>
+<arg>Ferrari 458</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211214 20:49:18.363" level="INFO">Typing text 'Ferrari 458' into text field 'id=twotabsearchtextbox'.</msg>
+<status status="PASS" starttime="20211214 20:49:18.363" endtime="20211214 20:49:18.481"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//*[@id="nav-search-submit-button"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211214 20:49:18.482" level="INFO">Clicking button 'xpath=//*[@id="nav-search-submit-button"]'.</msg>
+<status status="PASS" starttime="20211214 20:49:18.482" endtime="20211214 20:49:20.764"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>results for "Ferrari 458"</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20211214 20:49:20.765" endtime="20211214 20:49:20.829"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211214 20:49:20.829" endtime="20211214 20:49:22.983"/>
+</kw>
+<doc>This is some basic info about the test</doc>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20211214 20:49:15.755" endtime="20211214 20:49:22.983"/>
+</test>
+<test id="s1-s1-s1-t2" name="User can view a product">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://www.amazon.com</arg>
+<arg>gc</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211214 20:49:22.984" level="INFO">Opening browser 'gc' to base url 'http://www.amazon.com'.</msg>
+<status status="PASS" starttime="20211214 20:49:22.984" endtime="20211214 20:49:33.216"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Hello, Sign in</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20211214 20:49:33.216" endtime="20211214 20:49:33.257"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=twotabsearchtextbox</arg>
+<arg>Ferrari 458</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211214 20:49:33.257" level="INFO">Typing text 'Ferrari 458' into text field 'id=twotabsearchtextbox'.</msg>
+<status status="PASS" starttime="20211214 20:49:33.257" endtime="20211214 20:49:33.416"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//*[@id="nav-search-submit-button"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211214 20:49:33.417" level="INFO">Clicking button 'xpath=//*[@id="nav-search-submit-button"]'.</msg>
+<status status="PASS" starttime="20211214 20:49:33.416" endtime="20211214 20:49:37.317"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>results for "Ferrari 458"</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20211214 20:49:37.317" endtime="20211214 20:49:37.362"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath=//*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[3]/div/span/div/div/div[2]/div[1]/h2/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20211214 20:49:37.363" level="INFO">Clicking link 'xpath=//*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[3]/div/span/div/div/div[2]/div[1]/h2/a'.</msg>
+<status status="PASS" starttime="20211214 20:49:37.362" endtime="20211214 20:49:40.436"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Back to results</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20211214 20:49:40.437" endtime="20211214 20:49:40.488"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211214 20:49:40.488" endtime="20211214 20:49:42.654"/>
+</kw>
+<doc>This is some basic info about the test</doc>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20211214 20:49:22.984" endtime="20211214 20:49:42.654"/>
+</test>
+<test id="s1-s1-s1-t3" name="User can add product to cart">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://www.amazon.com</arg>
+<arg>gc</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211214 20:49:42.658" level="INFO">Opening browser 'gc' to base url 'http://www.amazon.com'.</msg>
+<status status="PASS" starttime="20211214 20:49:42.658" endtime="20211214 20:49:47.325"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Hello, Sign in</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20211214 20:49:47.325" endtime="20211214 20:49:47.355"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=twotabsearchtextbox</arg>
+<arg>Ferrari 458</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211214 20:49:47.355" level="INFO">Typing text 'Ferrari 458' into text field 'id=twotabsearchtextbox'.</msg>
+<status status="PASS" starttime="20211214 20:49:47.355" endtime="20211214 20:49:47.512"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//*[@id="nav-search-submit-button"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211214 20:49:47.513" level="INFO">Clicking button 'xpath=//*[@id="nav-search-submit-button"]'.</msg>
+<status status="PASS" starttime="20211214 20:49:47.513" endtime="20211214 20:49:49.852"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>results for "Ferrari 458"</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20211214 20:49:49.852" endtime="20211214 20:49:49.892"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath=//*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[3]/div/span/div/div/div[2]/div[1]/h2/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20211214 20:49:49.893" level="INFO">Clicking link 'xpath=//*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[3]/div/span/div/div/div[2]/div[1]/h2/a'.</msg>
+<status status="PASS" starttime="20211214 20:49:49.893" endtime="20211214 20:49:53.133"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Back to results</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20211214 20:49:53.133" endtime="20211214 20:49:53.205"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//*[@id="add-to-cart-button"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211214 20:49:53.206" level="INFO">Clicking button 'xpath=//*[@id="add-to-cart-button"]'.</msg>
+<status status="PASS" starttime="20211214 20:49:53.205" endtime="20211214 20:49:56.676"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211214 20:49:56.676" endtime="20211214 20:49:58.829"/>
+</kw>
+<doc>This is some basic info about the test</doc>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20211214 20:49:42.656" endtime="20211214 20:49:58.829"/>
+</test>
+<test id="s1-s1-s1-t4" name="User must sign in to check out">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://www.amazon.com</arg>
+<arg>gc</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211214 20:49:58.831" level="INFO">Opening browser 'gc' to base url 'http://www.amazon.com'.</msg>
+<status status="PASS" starttime="20211214 20:49:58.831" endtime="20211214 20:50:05.140"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Hello, Sign in</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20211214 20:50:05.140" endtime="20211214 20:50:05.180"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=twotabsearchtextbox</arg>
+<arg>Ferrari 458</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211214 20:50:05.180" level="INFO">Typing text 'Ferrari 458' into text field 'id=twotabsearchtextbox'.</msg>
+<status status="PASS" starttime="20211214 20:50:05.180" endtime="20211214 20:50:05.329"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//*[@id="nav-search-submit-button"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211214 20:50:05.329" level="INFO">Clicking button 'xpath=//*[@id="nav-search-submit-button"]'.</msg>
+<status status="PASS" starttime="20211214 20:50:05.329" endtime="20211214 20:50:07.562"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>results for "Ferrari 458"</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20211214 20:50:07.562" endtime="20211214 20:50:07.612"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath=//*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[3]/div/span/div/div/div[2]/div[1]/h2/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20211214 20:50:07.613" level="INFO">Clicking link 'xpath=//*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[3]/div/span/div/div/div[2]/div[1]/h2/a'.</msg>
+<status status="PASS" starttime="20211214 20:50:07.612" endtime="20211214 20:50:10.736"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Back to results</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20211214 20:50:10.737" endtime="20211214 20:50:10.785"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//*[@id="add-to-cart-button"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211214 20:50:10.785" level="INFO">Clicking button 'xpath=//*[@id="add-to-cart-button"]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211214 20:50:11.036" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211214 20:50:10.810" endtime="20211214 20:50:11.036"/>
+</kw>
+<msg timestamp="20211214 20:50:11.039" level="FAIL">Button with locator 'xpath=//*[@id="add-to-cart-button"]' not found.</msg>
+<status status="FAIL" starttime="20211214 20:50:10.785" endtime="20211214 20:50:11.039"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Added to Cart</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20211214 20:50:11.039" endtime="20211214 20:50:11.039"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath=//*[@id="nav-cart"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211214 20:50:11.039" endtime="20211214 20:50:11.039"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Shopping Cart</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20211214 20:50:11.039" endtime="20211214 20:50:11.039"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//*[@id="sc-buy-box-ptc-button"]/span/input</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211214 20:50:11.039" endtime="20211214 20:50:11.039"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Sign-In</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20211214 20:50:11.039" endtime="20211214 20:50:11.040"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20211214 20:50:11.040" endtime="20211214 20:50:11.040"/>
+</kw>
+<doc>This is some basic info about the test</doc>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20211214 20:49:58.830" endtime="20211214 20:50:11.040">Button with locator 'xpath=//*[@id="add-to-cart-button"]' not found.</status>
+</test>
+<status status="FAIL" starttime="20211214 20:49:15.575" endtime="20211214 20:50:11.041"/>
+</suite>
+<status status="FAIL" starttime="20211214 20:49:15.574" endtime="20211214 20:50:11.044"/>
+</suite>
+<status status="FAIL" starttime="20211214 20:49:15.549" endtime="20211214 20:50:11.045"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="3" fail="1" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="3" fail="1" skip="0" id="s1" name="Full Amazon Testcases">Full Amazon Testcases</stat>
+<stat pass="3" fail="1" skip="0" id="s1-s1" name="Tests">Full Amazon Testcases.Tests</stat>
+<stat pass="3" fail="1" skip="0" id="s1-s1-s1" name="Amazon full">Full Amazon Testcases.Tests.Amazon full</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
