@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.8.3 on win32)" generated="20220103 10:50:51.333" rpa="false" schemaversion="2">
+<suite id="s1" name="Tests" source="C:\Users\SEYMA\GitHub\RobotFramework\11_ListVariables\tests">
+<suite id="s1-s1" name="List" source="C:\Users\SEYMA\GitHub\RobotFramework\11_ListVariables\tests\List.robot">
+<test id="s1-s1-t1" name="Variable demonstration 1">
+<kw name="Log" library="BuiltIn">
+<arg>${MY_VARIABLE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220103 10:50:51.368" level="INFO">['Hello this is value 1', 'And this is value 2', 'Finally this is value 3']</msg>
+<status status="PASS" starttime="20220103 10:50:51.368" endtime="20220103 10:50:51.369"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${MY_VARIABLE}[0]</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220103 10:50:51.370" level="INFO">Hello this is value 1</msg>
+<status status="PASS" starttime="20220103 10:50:51.370" endtime="20220103 10:50:51.370"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${MY_VARIABLE}[1]</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220103 10:50:51.370" level="INFO">And this is value 2</msg>
+<status status="PASS" starttime="20220103 10:50:51.370" endtime="20220103 10:50:51.371"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${MY_VARIABLE}[2]</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220103 10:50:51.371" level="INFO">Finally this is value 3</msg>
+<status status="PASS" starttime="20220103 10:50:51.371" endtime="20220103 10:50:51.371"/>
+</kw>
+<status status="PASS" starttime="20220103 10:50:51.368" endtime="20220103 10:50:51.371"/>
+</test>
+<test id="s1-s1-t2" name="Variable demonstration 2">
+<kw name="Set Variable" library="BuiltIn">
+<var>${my_list_variable}</var>
+<arg>Item 1</arg>
+<arg>Item 2</arg>
+<arg>Item 3</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220103 10:50:51.372" level="INFO">${my_list_variable} = ['Item 1', 'Item 2', 'Item 3']</msg>
+<status status="PASS" starttime="20220103 10:50:51.372" endtime="20220103 10:50:51.372"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${my_list_variable}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220103 10:50:51.374" level="INFO">['Item 1', 'Item 2', 'Item 3']</msg>
+<status status="PASS" starttime="20220103 10:50:51.374" endtime="20220103 10:50:51.374"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${my_list_variable}[0]</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220103 10:50:51.374" level="INFO">Item 1</msg>
+<status status="PASS" starttime="20220103 10:50:51.374" endtime="20220103 10:50:51.374"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${my_list_variable}[1]</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220103 10:50:51.376" level="INFO">Item 2</msg>
+<status status="PASS" starttime="20220103 10:50:51.374" endtime="20220103 10:50:51.376"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${my_list_variable}[2]</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220103 10:50:51.376" level="INFO">Item 3</msg>
+<status status="PASS" starttime="20220103 10:50:51.376" endtime="20220103 10:50:51.376"/>
+</kw>
+<status status="PASS" starttime="20220103 10:50:51.372" endtime="20220103 10:50:51.376"/>
+</test>
+<status status="PASS" starttime="20220103 10:50:51.365" endtime="20220103 10:50:51.378"/>
+</suite>
+<status status="PASS" starttime="20220103 10:50:51.335" endtime="20220103 10:50:51.381"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="List">Tests.List</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
